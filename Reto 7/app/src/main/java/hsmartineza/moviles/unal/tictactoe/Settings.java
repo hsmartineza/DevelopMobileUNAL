@@ -1,4 +1,4 @@
-package oeroaq.moviles.unal.tictactoe;
+package hsmartineza.moviles.unal.tictactoe;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

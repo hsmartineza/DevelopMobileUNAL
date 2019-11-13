@@ -15,5 +15,5 @@
     <string name="result_tie">Result Tie</string>
     <string name="result_human_wins">Result human win</string>
     <string name="result_computer_wins">Result computer win</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Android Tic-Tac-Toe</string>
 </resources>

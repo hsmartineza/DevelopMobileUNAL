@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Directorio Empresas</string>
+    <string name="date_picker_title">Hire Date</string>
+    <string name="new_empresa">Nueva Empresa</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$s crimes</string>
+    <string name="choose_menu">Escoja una opcion</string>
+    <string name="view_all_empresas">Ver todas las empresas</string>
+    <string name="remove_empresa">Eliminar Empresa</string>
+    <string name="update_empresa">Actualizar Empresa</string>
+    <string name="add_empresa">Agregar Empresa</string>
+    <string name="gender">Gender</string>
+    <string name="add_clasificacion">Clasificacion</string>
+    <string name="add_url">URL</string>
+    <string name="add_productos">Productos y servicios</string>
+    <string name="add_nombre_empresa">Nombre de la empresa</string>
+    <string name="add_telefono">Telefono de contacto</string>
+    <string name="add_email">Email</string>
+    <string name="enter_employee_id">Enter Your Employee Id</string>
+    <string name="settings">Settings</string>
+</resources>

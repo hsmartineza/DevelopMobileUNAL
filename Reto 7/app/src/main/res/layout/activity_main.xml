@@ -42,7 +42,7 @@
         android:id="@+id/texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="oeroaq@unal.edu.co"
+        android:text="hsmartineza@unal.edu.co"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent" />
 

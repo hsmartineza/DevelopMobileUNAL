@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp">
+    <EditText
+        android:id="@+id/edit_text_nombre_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_nombre_empresa"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+    <EditText
+        android:id="@+id/edit_text_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_url"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_text_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_telefono"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_email"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+    <EditText
+        android:id="@+id/edit_text_productos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_productos"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+    <EditText
+        android:id="@+id/edit_text_clasificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_clasificacion"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+    <Button
+        android:id="@+id/button_add_update_employee"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/button_padding"
+        android:text="@string/add_empresa"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

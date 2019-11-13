@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".AndroidTicTacToeActivity">
 
-    <oeroaq.moviles.unal.tictactoe.BoardView
+    <hsmartineza.moviles.unal.tictactoe.BoardView
         android:id="@+id/board"
         android:layout_width="300dp"
         android:layout_height="300dp"

@@ -1,4 +1,4 @@
-package oeroaq.moviles.unal.tictactoe;
+package hsmartineza.moviles.unal.tictactoe;
 
 import android.content.Context;
 import android.graphics.Bitmap;

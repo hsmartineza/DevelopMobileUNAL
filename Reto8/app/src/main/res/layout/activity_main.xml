@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp" tools:context=".MainActivity">
+
+    <TextView android:text="@string/choose_menu" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/header_margin"
+        android:paddingRight="@dimen/header_margin"
+        android:paddingLeft="@dimen/header_margin"
+        android:paddingBottom="@dimen/header_bottom_margin"
+        android:textSize="@dimen/text_size"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:gravity="clip_horizontal" />
+    <Button
+        android:id="@+id/button_add_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_empresa"/>
+
+    <Button
+        android:id="@+id/button_edit_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_empresa"/>
+
+    <Button
+        android:id="@+id/button_delete_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_empresa"/>
+
+    <Button
+        android:id="@+id/button_view_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all_empresas"/>
+
+</LinearLayout>

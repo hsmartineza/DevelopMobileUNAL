@@ -1,4 +1,4 @@
-package oeroaq.moviles.unal.tictactoe;
+package hsmartineza.moviles.unal.tictactoe;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -30,6 +30,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import java.util.ArrayList;
 
 import javax.annotation.Nullable;
+
+import hsmartineza.moviles.unal.tictactoe.R;
 
 public class AndroidTicTacToeActivity extends AppCompatActivity {
     private static final String TAG = "AndroidTicTacToeActivity";
@@ -250,9 +252,9 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
             case R.id.ai_preferences:
                 startActivityForResult(new Intent(this, Settings.class),0);
                 return true;
-            case R.id.ai_about:
+            case R.id.ai_About:
                 showDialog(DIAlOG_ABOUT_ID);
-            case R.id.ai_reset:
+            case R.id.quit:
                 SharedPreferences.Editor ed = mPrefs.edit();
         }
         return false;

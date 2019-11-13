@@ -6,7 +6,7 @@
         android:title="Preferences" />
     <item android:id="@+id/ai_reset"
         android:title="Reset" />
-    <item android:id="@+id/ai_about"
+    <item android:id="@+id/ai_About"
         android:title="About" />
     <item android:id="@+id/quit"
         android:title="Quit"/>
