@@ -17,6 +17,6 @@
     <string name="add_nombre_empresa">Nombre de la empresa</string>
     <string name="add_telefono">Telefono de contacto</string>
     <string name="add_email">Email</string>
-    <string name="enter_employee_id">Enter Your Employee Id</string>
+    <string name="enter_empresa_id">Ingrese el Id de su Empresa</string>
     <string name="settings">Settings</string>
 </resources>

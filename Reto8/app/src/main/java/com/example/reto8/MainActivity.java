@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
         addEmpresaButton = (Button) findViewById(R.id.button_add_empresa);
         editEmpresaButton = (Button) findViewById(R.id.button_edit_empresa);
         deleteEmpresaButton = (Button) findViewById(R.id.button_delete_empresa);
-        viewAllEmpresaButton = (Button)findViewById(R.id.button_view_employees);
+        viewAllEmpresaButton = (Button)findViewById(R.id.button_view_empresa);
 
 
 
         addEmpresaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,AddUpdateEmployee.class);
+                Intent i = new Intent(MainActivity.this,AddUpdateEmpresa.class);
                 i.putExtra(EXTRA_ADD_UPDATE, "Add");
                 startActivity(i);
             }
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         viewAllEmpresaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, ViewAllEmployees.class);
+                Intent i = new Intent(MainActivity.this, ViewAllEmpresas.class);
                 startActivity(i);
             }
         });
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.employee_menu, menu);
+        getMenuInflater().inflate(R.menu.empresa_menu, menu);
         return true;
     }
 
@@ -100,9 +100,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog,int id) {
                         // get user input and set it to result
                         // edit text
-                        Intent i = new Intent(MainActivity.this,AddUpdateEmployee.class);
+                        Intent i = new Intent(MainActivity.this,AddUpdateEmpresa.class);
                         i.putExtra(EXTRA_ADD_UPDATE, "Update");
-                        i.putExtra(EXTRA_EMP_ID, Long.parseLong(userInput.getText().toString()));
+                        String value = userInput.getText().toString();
+                        i.putExtra(EXTRA_EMP_ID, Long.parseLong(value));
                         startActivity(i);
                     }
                 }).create()
@@ -130,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
                         // get user input and set it to result
                         // edit text
                         empresaOps = new EmpresaOperations(MainActivity.this);
+                        empresaOps.open();
                         empresaOps.removeEmpresa(empresaOps.getEmpresa(Long.parseLong(userInput.getText().toString())));
                         Toast t = Toast.makeText(MainActivity.this,"Emepresa eliminadad exitosamente!",Toast.LENGTH_SHORT);
                         t.show();
@@ -142,12 +144,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        empresaOps = new EmpresaOperations(MainActivity.this);
         empresaOps.open();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        empresaOps = new EmpresaOperations(MainActivity.this);
         empresaOps.close();
 
     }

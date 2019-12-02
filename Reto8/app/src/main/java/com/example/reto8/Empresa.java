@@ -7,12 +7,12 @@ public class Empresa {
 
     private String nombre;
     private String url;
-    private long telefono;
+    private String telefono;
     private String emailContacto;
     private String productos;
     private String clasificacion;
 
-    public Empresa(long empId, String nombre, String url, long telefono, String emailContacto, String productos, String clasificacion){
+    public Empresa(long empId, String nombre, String url, String telefono, String emailContacto, String productos, String clasificacion){
         this.empId = empId;
         this.nombre = nombre;
         this.url = url;
@@ -51,11 +51,11 @@ public class Empresa {
         this.url = url;
     }
 
-    public long getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(long telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -88,9 +88,9 @@ public class Empresa {
                 "Nombre : "+getNombre() + " " + "\n" +
                 "URL: "+getUrl() + "\n" +
                 "Telefono : "+getTelefono()+ "\n" +
-                "Email contacto" + getEmailContacto() + "\n" +
-                "Productos y servicios" + getProductos() + "\n" +
-                "Clasificacion" + getClasificacion() + "\n";
+                "Email contacto: " + getEmailContacto() + "\n" +
+                "Productos y servicios: " + getProductos() + "\n" +
+                "Clasificacion: " + getClasificacion() + "\n";
 
 
     }

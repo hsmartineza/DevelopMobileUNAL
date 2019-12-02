@@ -50,7 +50,7 @@
         android:padding="@dimen/view_padding"
         android:textSize="@dimen/add_edit_textsize"/>
     <Button
-        android:id="@+id/button_add_update_employee"
+        android:id="@+id/button_add_update_empresa"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_marginTop="@dimen/button_padding"
