@@ -84,7 +84,7 @@ public class Empresa {
     }
 
     public String toString(){
-        return "Emp id: "+getEmpId()+ "\n" +
+        return "Emp id: "+getEmpId()+
                 "Nombre : "+getNombre() + " " + "\n" +
                 "URL: "+getUrl() + "\n" +
                 "Telefono : "+getTelefono()+ "\n" +

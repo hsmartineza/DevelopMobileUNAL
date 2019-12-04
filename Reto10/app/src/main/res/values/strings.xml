@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Museos</string>
+    <string name="nombre_museo">Nombre del Museo</string>
+    <string name="localidad">Localidad</string>
+    <string name="btn_search">Buscar</string>
+
+
+</resources>
